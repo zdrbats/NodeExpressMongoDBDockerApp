@@ -3,7 +3,7 @@ version: '3.7'
 services:
 
   node:
-    container_name: nodeapp
+    #container_name: nodeapp
     image: nodeapp
     build:
       context: .
@@ -11,7 +11,7 @@ services:
       args:
         PACKAGES: "nano wget curl"
     ports:
-      - "3000:3000"
+      - "3000"
     networks:
       - nodeapp-network
     volumes:
